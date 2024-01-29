@@ -6,10 +6,8 @@ This is a website that allows users to top up virtual wallets and accounts, pay 
 The website provides an easy way for users to top up various virtual services and accounts like:
 
 - Mobile and Data Plans
-- Streaming Services 
-- Gaming Accounts
-- eVouchers and Gift Cards
-- Cryptocurrency Wallets
+- Electricity Bills
+- DSTV, Startimes, GOTV
 - and more...
 
 Key features:
@@ -24,7 +22,7 @@ Key features:
 - Frontend: React 
 - Backend: PHP, Node.js
 - Database: MongoDB
-- Payment Gateway Integration: Stripe, PayPal 
+- Payment Gateway Integration:
 - APIs for top-ups
 
 ## Getting Started
