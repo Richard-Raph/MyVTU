@@ -1,9 +1,9 @@
-
+import Login from '../src/Components/Home/Login'
 function App() {
 
   return (
     <>
-      THIS IS MYVTU WEBPAGE
+     <Login/>
     </>
   )
 }
