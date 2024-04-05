@@ -1,0 +1,217 @@
+.find_domain{
+    .domain_search{
+        background: #11162e;
+        padding: 35px 30px 30px;
+        .form_title{
+            h5{
+                color: #fff;
+                font-weight: 300;
+            }
+            h2{
+                font-size: 36px;
+                color: @baseColor;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #8188a7;
+                line-height: 18px;
+                font-weight: 300;
+            }
+        }
+        .input-group{
+            .form-control{
+                height: 50px;
+                line-height: 50px;
+                padding: 0 15px;
+                border: none;
+            }
+            .input-group-addon{
+                padding: 0;
+                background: none;
+                border-radius: 0;
+                border: none;
+                .searchFilters{
+                    position: relative;
+                    .btn{
+                        width: 165px;
+                        margin-left: -165px;
+                        line-height: 50px;
+                        text-align: left;
+                        background: #fff;
+                        z-index: 2;
+                        color: #4f5660;
+                        border-left: 1px solid #d5dae2;
+                        text-transform: lowercase;
+                        font-family: @baseFont2;
+                        font-weight: 500;
+                        i{
+                            position: absolute;
+                            right: 27px;
+                            line-height: 50px;
+                        }
+                        & + ul{
+                            border-radius: 0;
+                            width: 165px;
+                            left: -165px;
+                            margin: 0;
+                            border: none;
+                            padding: 0;
+                            li{
+                                a{
+                                    color: #4f5660;
+                                    border-top: 1px solid #d5dae2;
+                                    text-transform: lowercase;
+                                    font-family: @baseFont2;
+                                    font-weight: 500;
+                                    line-height: 35px;
+                                    padding: 0 25px;
+                                    &:hover{
+                                        background: @baseColor;
+                                        color: @baseColor5;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                input{
+                    padding: 0 35px;
+                    background: @baseColor;
+                    color: #fff;
+                    font-family: @baseFont;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    border: none;
+                    line-height: 50px;
+                }
+            }
+        }
+        .price_list{
+            margin-top: 22px;
+            li{
+                padding: 0 35px;
+                color: #fff;
+                font-family: @baseFont2;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 33px;
+                & + li{
+                    border-left: 1px solid #3f476c;
+                }
+                &:first-child{
+                    padding-left: 0;                    
+                }
+            }
+        }
+    }
+    &.find_domain2{
+        background: @baseColor3;
+        .domain_search{
+            padding-left: 0;
+            background: none;
+            .form_title{
+                h2{
+                    color: #fff;
+                }
+                p{
+                    color: #b4d3fb;
+                }
+            }
+            .price_list{
+                li{
+                    & + li{
+                        border-left-color: #0f91d6;
+                    }
+                }
+            }
+            .input-group{
+                .form-control{
+                    width: ~"calc(100% - 165px)";
+                }
+            }
+        }
+    }
+    &.find_domain3{
+        .find_domain_cover{
+            background: url(../../images/slider/3.jpg) no-repeat scroll center center;
+            background-size: cover;
+            height: 775px;
+            .container{
+                height: 100%;
+                .row{
+                    position: absolute;
+                    top: ~"calc(50% - 95px)";
+                    h2{
+                        font-family: @baseFont2;
+                        font-weight: bold;
+                        font-size: 60px;
+                        color: #fff;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-family: @baseFont2;
+                        font-weight: 300;
+                        font-size: 16px;
+                        color: #9d9ea7;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        .domain_search{
+            padding: 37px;
+            background: @baseColor3;
+            position: absolute;
+            bottom: 0;
+            width: 97.3%;
+            .input-group{
+                .input-group-addon{
+                    input{
+                        background: @baseColor;
+                        color: #fff;
+                    }
+                }
+            }
+        }        
+    }
+    &.find_domain_drop{
+        .transition();
+        &.down{
+        }
+        & + .drop_icon{
+            z-index: 999;
+            text-align: center;
+            font-size: 36px;            
+            &:before{
+                content: '';
+                width: 1px;
+                height: 56px;
+                background: fade(fade(@baseColor,33%),27%);
+                display: block;
+                position: absolute;
+                right: 127.5px;
+                top: 0;
+            }
+            .domain_search_drop{
+                color: #fff;
+                background: @baseColor;
+                width: 50px;
+                line-height: 50px;
+                border-radius: 100%;
+                display: block;
+                position: absolute;
+                right: 103px;
+                top: 56px;
+                font-family: 'Open Sans', sans-serif;
+                transition-duration: 1s;
+                &.rotate{
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}

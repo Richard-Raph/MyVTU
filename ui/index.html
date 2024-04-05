@@ -1,13 +1,710 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyVTU</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      MyVTU - Best VTU Website, Subscribe your Cable TV, aitrime subscription
+      and many more
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap-theme.min.css" />
+
+    <!--Loader-->
+    <link rel="stylesheet" href="./assets/css/spinners.css" />
+
+    <!-- Vendors -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/owl.carousel/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/simple-line-icons/css/simple-line-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/vendors/lineariconsFree/style.css" />
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css" />
+
+    <!--Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,300,400italic,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind css cdn -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/tailwind.output.css" />
+    <link rel="stylesheet" href="./assets/css/tailwind_2.css">
+
+    <!-- app css -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/app.css"> -->
+
+    <!-- main css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+
+    <!-- aos css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/aos.css">
+
+    <!-- chart css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+    />
+
+    <!-- fontawesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css" integrity="sha512-sWLOh8QiEOmwfP3jd0n7AneUOa6XKif5g8GU8FqdFMIbr6rYBt1PKWBp/Wv4E6PQ6N9lFtVAndujl9HbniDTog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Theme Styles-->
+    <link rel="stylesheet" href="./assets/css/default/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive/responsive.css" />
+
+    <style type="text/css">
+      html {
+        overflow: hidden;
+        overflow-y: auto;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: Montserrat, verdana, sans-serif;
+        overflow: hidden;
+      }
+      .pricing_plan_cell .nav li {
+        font-family: "Poppins";
+        font-weight: semibold;
+      }
+      h2 {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: Montserrat, verdana, sans-serif;
+      }
+      .home_slider .item img {
+        opacity: 0.4;
+      }
+      .fluid_header.centered
+        .navbar-collapse
+        .navbar-nav.navbar-right
+        li.login-link
+        a {
+        background-color: #0099db !important;
+      }
+
+      .home_slider .owl-controls .owl-nav div {
+        background: white !important;
+        color: black !important;
+      }
+      .home_slider .item .slide_caption {
+        padding: 0px 80px;
+        margin: auto;
+      }
+      .home_slider .item .slide_caption h2 {
+        font-weight: 500;
+      }
+      p {
+        font-size: 1.4rem !important;
+        /*font-family: Montserrat,verdana,sans-serif !important;*/
+        font-family: "Poppins" !important;
+        font-weight: 400;
+        letter-spacing: 0px;
+      }
+      .fluid_header.centered .navbar-collapse .navbar-nav.navbar-right li a {
+        font-family: "Poppins";
+        font-weight: normal;
+      }
+      .home_slider .item .slide_caption p {
+        line-height: inherit !important;
+        margin-bottom: 10px !important;
+      }
+      .fluid_header
+        .navbar-nav.navbar-right
+        li.dropdown.mega-drop
+        .mega-menu
+        li.service_list
+        .service
+        .media
+        .media-left {
+        display: block;
+        float: left;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Poppins" !important;
+      }
+      .cause2choose {
+        padding: 0px !important;
+      }
+      .tab-content {
+        padding: 10px;
+      }
+      .tab-content a {
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+        width: max-content;
+      }
+      .media-body {
+        width: 80%;
+      }
+      .media {
+        zoom: 1;
+        overflow: hidden;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .why_choose {
+        padding: 50px 20px;
+        padding-top: 80px;
+      }
+      .service_tab_menu .container {
+        overflow: hidden;
+      }
+      .collapse {
+        height: 100vh;
+      }
+
+      @media screen and (max-width: 1300px) {
+        .navbar-header {
+          position: relative;
+          overflow: hidden;
+          width: max-content;
+          margin: auto;
+        }
+        .navbar-brand {
+          position: relative;
+          overflow: hidden;
+        }
+        .container {
+          width: 100%;
+          max-width: 100%;
+          position: relative;
+          padding: 0px 9px !important;
+        }
+        nav.navbar .container {
+          padding: 0px;
+          width: 97% !important;
+        }
+        .nav > li {
+          font-size: 13px;
+        }
+      }
+
+      @media screen and (max-width: 1100px) {
+        .nav > li {
+          font-size: 13px;
+        }
+
+        .top_header .col-sm-6 {
+          width: max-content !important;
+        }
+      }
+      @media screen and (max-width: 991px) {
+        .wc_msg {
+          display: none;
+        }
+        .container {
+          width: 96%;
+        }
+        .fluid_header.centered
+          .navbar-collapse
+          .navbar-nav.navbar-right
+          li.login-link {
+          width: max-content;
+        }
+        .fluid_header.centered
+          .navbar-collapse
+          .navbar-nav.navbar-right
+          li.login-link
+          a {
+          padding: 5px 20px;
+        }
+        .top_header .col-sm-6.wc_msg {
+          float: left !important;
+        }
+        .top_header .col-sm-6 {
+          width: max-content !important;
+        }
+        .fluid_header .navbar-header .navbar-brand {
+          padding: 21px 15px !important;
+        }
+
+        .fluid_header.centered .navbar-collapse .navbar-nav.navbar-right li a {
+          padding: 0 7px;
+        }
+        .top_header .container {
+          width: 95% !important;
+        }
+      }
+
+      @media screen and (max-width: 880px) {
+        .mg_small {
+          width: 40% !important;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .home_slider .item .slide_caption {
+          padding: 0px 40px;
+          text-align: left;
+          top: 45px;
+        }
+        .fluid_header.centered .navbar-header .navbar-toggle span {
+          background: #000000d9;
+          /* border: 1px solid #ccc; */
+          border-radius: 20px;
+        }
+        .home_slider .item img {
+          object-fit: cover;
+          opacity: 0.4;
+          height: 300px;
+        }
+        .fluid_header .navbar-header .navbar-brand {
+          padding: 3px !important;
+          padding-left: 10px !important;
+        }
+        .fluid_header.centered .navbar-header .navbar-toggle {
+          margin: 10px 10px 9px 0;
+          background-color: transparent;
+          outline: none;
+        }
+        .navbar-toggle .icon-bar {
+          width: 25px;
+        }
+        .home_slider .item .slide_caption p {
+          margin-bottom: 5px !important;
+          font-size: 11px !important;
+        }
+        .home_slider .item .slide_caption h2 {
+          font-size: 24px;
+          margin-bottom: 8px;
+        }
+        .home_slider .owl-controls .owl-nav div {
+          line-height: 70px;
+          width: 24px;
+          font-size: 15px;
+        }
+        .home_slider .item .slide_caption p {
+          display: block !important;
+        }
+        .home_slider .owl-controls {
+          top: calc(50% - 35px);
+        }
+        .serviceTab .service_tab_menu .nav {
+          padding: 0px !important;
+        }
+        .serviceTab .service_tab_menu .nav li a {
+          background-color: #051f6c;
+        }
+        .sectionTitle h2 {
+          font-size: 30px !important;
+        }
+        .sectionTitle {
+          margin-bottom: 35px;
+        }
+      }
+
+      @media screen and (max-width: 370px) {
+        .home_slider .item .slide_caption {
+          top: 30px;
+        }
+      }
+    </style>
+
+    <style type="text/css">
+      form.action_form input,
+      form.action_form select {
+        width: 600px;
+        font-size: 14px;
+        font-weight: 500 !important;
+      }
+
+      form.action_form select option,
+      button {
+        font-size: 14px !important;
+      }
+
+      @media screen and (max-width: 800px) {
+        form.action_form input,
+        form.action_form select {
+          width: 100%;
+        }
+      }
+    </style>
+    <style type="text/css">
+      /* .home_slider small {
+
+      } */
+      .close_form {
+        cursor: pointer;
+      }
+    </style>
+    <style type="text/css">
+      form.action_form input,
+      form.action_form select {
+        width: 100% !important;
+      }
+    </style>
+    <style type="text/css">
+      h1,
+      h2,
+      h3 {
+        font-family: Montserrat, verdana, sans-serif !important;
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <script type="text/javascript">
+      AOS.init({
+        duration: 2200,
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function (){
+
+        $(".menu").click(function (){
+          $(".sidebar").slideToggle('slow');
+        });
+        $('#exit_sidenav').click(function (){
+          $(".sidebar").slideToggle('slow');
+        });
+
+        $(".close_popup").click(function (){
+          $(this).parent().parent().parent().fadeOut('fast');
+        });
+
+
+        $('.single_mail').click(function (e) {
+            let __that = $(this);
+            let __subscribersId = __that.attr('data-id');
+            let __subscribersName = __that.attr('data-name');
+            let __subscribersEmail = __that.attr('data-email');
+
+            $('form#mail_form').attr('action', '/mail/single');
+
+
+            // show popup email block
+            $("form#mail_form input[name=name]").val(`${__subscribersName}`);
+            $("form#mail_form input[name=email]").val(`${__subscribersEmail}`);
+            // send request to send email in background
+            
+            $("#email_popup").fadeIn();
+            $("#email_popup").css('display', 'flex');
+
+            $("form#mail_form input[name=name]").attr('readonly', 'readonly');
+            $("form#mail_form input[name=email]").attr('readonly', 'readonly');
+
+            $("form#mail_form h2").html(`Send Mail To ${__subscribersName}`);
+
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        });
+
+
+        $('.multiple_mail').click(function (e) {
+            let __that = $(this);
+            let __subscribersId = __that.attr('data-id');
+            let __subscribersName = __that.attr('data-name');
+            let __subscribersEmail = __that.attr('data-email');
+
+            $('form#mail_form').attr('action', '/mail/bulk');
+            // show popup email block
+            $("form#mail_form input[name=name]").val(`All Subscribers Name`);
+            $("form#mail_form input[name=email]").val(`All Email Address`);
+            // send request to send email in background
+            
+            $("#email_popup").fadeIn();
+            $("#email_popup").css('display', 'flex');
+
+            $("form#mail_form input[name=name]").attr('readonly', 'readonly');
+            $("form#mail_form input[name=email]").attr('readonly', 'readonly');
+
+            $("form#mail_form h2").html(`Send To All Subscribers`);
+
+            e.preventDefault();
+            e.stopPropagation();
+            return false;
+        });
+
+
+
+        // search events
+        $('#search').keyup(function(){
+          let __that = $(this);
+          let __val = __that.val();
+
+
+          if ( __val !== "" && __val.length > 3 ) {
+
+            let __url = window.location.origin + '/search/' + __val ;
+
+            $.ajax({
+              url: __url,
+              type: 'GET',
+              dataType: 'JSON',
+
+              complete: (response) => {
+                if ( response.status !== 404 && response.statusText !== "error" ) {
+                  let __response = JSON.parse(response.responseText);
+
+                  $(".search_result").fadeIn('slow');
+                  $('.search_result').html('');
+
+                  __response.forEach(function (__element) {
+                    $('.search_result').append(`<span class="single_mail_search hover:bg-gray-600 text-black font-semibold text-left mb-3 border-b-2 border-gray-200 w-full p-3 block relative" style="width: 100%;" data-id="${__element.id}" data-name="${__element.name}" data-email="${__element.email}">${__element.email}</span>`);
+
+                    $('.single_mail_search').click(function (e) {
+                        let __that = $(this);
+                        let __subscribersId = __that.attr('data-id');
+                        let __subscribersName = __that.attr('data-name');
+                        let __subscribersEmail = __that.attr('data-email');
+
+                        $('form#mail_form').attr('action', '/mail/single');
+
+
+                        // show popup email block
+                        $("form#mail_form input[name=name]").val(`${__subscribersName}`);
+                        $("form#mail_form input[name=email]").val(`${__subscribersEmail}`);
+                        // send request to send email in background
+                        
+                        $("#email_popup").fadeIn();
+                        $("#email_popup").css('display', 'flex');
+
+                        $("form#mail_form input[name=name]").attr('readonly', 'readonly');
+                        $("form#mail_form input[name=email]").attr('readonly', 'readonly');
+
+                        $("form#mail_form h2").html(`Send Mail To ${__subscribersName}`);
+
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    });
+                  });
+
+                }
+                else {
+                  // show error messages
+                  if ( response.statusText === "error" ) {
+                    // internet connection error
+                    console.error('Internet Connection Failed');
+                  }
+                  else {
+                    console.error('An Error Occurred');
+                  }
+                }
+              },
+
+              error: err => {
+                console.log('Internal Server Error');
+              }
+            });
+          }
+        });
+
+      });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function (){
+    $("#dashboard").append(`<span
+      class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+      aria-hidden="true"
+    ></span>`);
+
+    $("#dashboard_phone").append(`<span
+      class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+      aria-hidden="true"
+    ></span>`);
+    });
+    </script>
+
+    <script type="text/javascript">
+      tinymce.init({
+            selector: 'textarea#editor',
+            height: 200,
+            width: '100%',
+            menubar: true,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste help wordcount autoresize'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+            'bold italic backcolor | alignleft aligncenter ' +
+            'alignright alignjustify | bullist numlist outdent indent | ' +
+            'removeformat | help | fullscreen | image | paste | file',
+            content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+            statusbar: false,
+            toolbar_items_size: 'small',
+            element_format: 'html',
+            encoding: "UTF-8",
+            entity_encoding : "html",
+            oninit : "setPlainText",
+            apply_source_formatting : true,
+            images_upload_url: 'http://localhost/regno/image_processor.php',
+            automatic_uploads: true,
+            images_dataimg_filter: function(img) {
+              return !img.hasAttribute('internal-blob');  // blocks the upload of <img> elements with the attribute "internal-blob".
+            },
+            file_picker_types: 'file image media',
+            images_file_types: 'jpg,svg,webp,png,svg',
+        });
+
+
+      $(document).ready(function (){
+          $("#fileInput").on("change",function(){
+        //   var dataString=new FormData($("#fileInput")[0]);
+            var fd = new FormData();
+            var files = $('#fileInput')[0].files;
+            
+            // Check file selected or not
+            if(files.length > 0 ){
+              fd.append('file',files[0]);
+              
+                $.ajax({
+                  type: "POST",
+                  url: "http://localhost/regno/file_upload.php",
+                  enctype: "multipart/form-data",
+                  data: fd,
+                  cache:false,
+                  processData: false,
+                  contentType: false,
+                  dataType: "json",
+                  success: function(json) {
+                      console.log(json);
+                    let __fileUrl = json.location;
+                      // reset the form or it won't work a 2nd time
+
+                      let content =  tinymce.get("editor").getContent({ format: "html" });;
+                      
+                      if( __fileUrl.split('.').pop() === 'jpg' 
+                          || __fileUrl.split('.').pop() === 'png' 
+                          ||  __fileUrl.split('.').pop() === 'gif'
+                          ||  __fileUrl.split('.').pop() === 'svg'
+                          ||  __fileUrl.split('.').pop() === 'jpeg' ) {
+
+
+                        // show images preview
+                        
+                        tinymce.get("editor").execCommand('mceInsertContent', false, `<img src="${__fileUrl}">`);
+
+                      }
+                      else {
+                        tinymce.get("editor").execCommand('mceInsertContent', false, `<a href="${__fileUrl}">${__fileUrl}</a>`);
+                      }
+
+                  },
+                  erorr: err => {
+                    console.log(err);
+                  }
+            });  
+            }               
+      });  
+      });
+
+      window.localStorage.setItem('dark', true);
+    </script>
+
+    <!-- React jsx -->
+    <script type="module" src="./src/main.jsx"></script>
+
+    <!-- aos js -->
+    <script type="text/javascript" src="./assets/js/aos.js"></script>
+
+    <!--jQuery, Bootstrap and other vendor JS-->
+
+    <!--jQuery-->
+    <script src="./assets/js/jquery-2.1.4.min.js"></script>
+
+    <!--Bootstrap JS-->
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <!--Owl Carousel-->
+    <script src="./assets/vendors/owl.carousel/owl.carousel.min.js"></script>
+
+    <!--Waypoints-->
+    <script src="./assets/vendors/waypoints/waypoints.min.js"></script>
+
+    <!--Counter Up-->
+    <script src="./assets/vendors/counterup/jquery.counterup.min.js"></script>
+
+    <!--Magnific Popup-->
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--Isotope-->
+    <script src="./assets/vendors/isotope/isotope.min.js"></script>
+
+    <!--infinitescroll-->
+    <script src="./assets/vendors/infinitescrol/jquery.infinitescroll.min.js"></script>
+
+    <!--Theme JS-->
+    <script src="./assets/js/theme.js"></script>
+
+    <!-- main js -->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+    <!-- custom text editor -->
+    <script src="./assets/plugins/tinymce/jquery.tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="./assets/plugins/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <!-- jquery js -->
+    <script type="text/javascript" src="./assets/js/jquery.js"></script>
+
+    <!-- alpine js -->
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+
+    <!-- init js -->
+    <script src="./assets/js/init-alpine.js"></script>
+
+    <!-- chart js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      defer
+    ></script>
+    <script type="text/javascript" src="./assets/js/chart.js"></script>
+    <script type="text/javascript" src="./assets/js/charts-lines.js"></script>
+    <script type="text/javascript" src="./assets/js/charts-bars.js"></script>
+    <script type="text/javascript" src="./assets/js/charts-pie.js"></script>
   </body>
 </html>

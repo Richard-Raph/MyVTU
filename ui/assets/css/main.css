@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+html {
+	padding: 0px;
+	margin: 0px;
+	scroll-behavior: smooth;
+}
+
+body {
+	/*font-family: 'Poppins';*/
+
+		/* We need to assaign this CSS Custom property to the body instead of :root, because of CSS Specificity and codepen stylesheet placement before loaded CKE5 content. */
+	--ck-z-default: 100;
+	--ck-z-modal: calc( var(--ck-z-default) + 999 );
+}
+textarea {
+	height: 200px;
+}
+.sidebar {
+	display: none;
+}
+#exit_sidenav {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	padding: 2px;
+	cursor: pointer;
+}
+
+.slider .slider_inner div {
+	width: 280px;
+	height: 120px;
+}
+
+.dashboard_card .svg_wrapper {
+	height: 50px !important;
+	width: 50px !important;
+	overflow: hidden;
+	margin-left: 2px;
+}
+.dashboard_card i {
+	height: 100%;
+	width: 100%;
+	font-size: 35px;
+}
+
+table tr td, table th {
+	padding: 3px;
+	text-align: center;
+}
+
+#top_arrow {
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	background: white;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	padding: 5px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .registration-modal {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+  }
+  
+
+/*** [ === FOOTER STYLING START === ] ***/
+footer {
+	padding: 10px;
+	font-weight: 500;
+	text-align: center;
+	box-shadow: 1px 3px 5px rgba(0,0,0,.6);
+}
+/*** [ === FOOTER STYLING END === ] ***/
+@media screen and (max-width: 600px) {
+	#top_arrow {
+		display: flex;
+	}
+
+	@media screen and (max-width: 400px) {
+		.search {
+			width: 80%;
+		}
+		.menu {
+			width: 10%;
+		}
+		.profile {
+			width: 10%;
+		}
+	}
+
+	.id_tbl {
+		width: 20px;
+	}
+	.email_tbl {
+		width: 120px;
+	}
+	.joined_tbl {
+		width: 100px;
+	}
+	.mail_tbl {
+		width: 70px;
+	}
+	.delete_tbl {
+		width: 80px;
+	}
+}

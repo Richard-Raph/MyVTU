@@ -1,0 +1,297 @@
+.serviceTab{
+    .service_tab_menu{
+        border-bottom: 1px solid  #d8d8d8;
+        background: #f9f9f9;
+        .nav{
+            overflow: hidden;
+            padding: 0 15px;
+            margin-bottom: -1px;
+            li{
+                a{
+                    border-radius: 0;
+                    padding: 45px 57px;
+                    text-align: left;
+                    display: block;
+                    font-family: @baseFont2;
+                    font-weight: 600;
+                    color: @baseColor5;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    border: 1px solid  #d8d8d8;
+                    border-top: none;
+                    cursor: pointer;
+                    background: #f9f9f9;
+                    &:before{
+                        content: '';
+                        width: 100%;
+                        height: 0;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: @baseColor3;
+                    }
+                    .icon{
+                        float: left;
+                        margin-right: 30px;
+                    }
+                    &:hover,&:focus{
+                        background: #f5f5f5;
+                        &:before{
+                            height: 10px;
+                        }
+                    }
+                }
+                & + li{
+                    a{
+                        border-left-color: transparent;
+                    }
+                }
+                &.active{
+                    a{
+                        border-bottom-color: #fff;
+                        border-top: none;
+                        background: #fff;
+                        &:before{
+                            height: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    } // Tab Menu
+    .serviceTab_contents{
+        .tab-content{
+            .tab-pane{
+                .title{
+                    text-transform: uppercase;
+                    font-family: @baseFont2;
+                    line-height: 1;
+                    margin: 110px 0 20px;
+                    color: @baseColor5;
+                }
+                p{
+                    color: @baseColor5;
+                    font-family: @baseFont2;
+                    font-weight: 300;
+                    line-height: 24px;
+                    margin-bottom: 40px;
+                }
+                ul{
+                    margin-bottom: 45px;
+                }
+                .service_img{
+                }
+                .service_ico{
+                    position: absolute;
+                    left: -85px;
+                    top: 113px;
+                    width: 500px;
+                    height: 500px;
+                    border-radius: 100%;
+                    
+                }
+                .rent{
+                    position: absolute;
+                    top: 170px;
+                    left: 231px;
+                    border-radius: 100%;
+                    background: @baseColor;
+                    width: 119px;
+                    height: 119px;
+                    text-align: center;
+                    font-family: @baseFont2;
+                    font-weight: bold;
+                    font-size: 36px;
+                    line-height: 1;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding-top: 33px;
+                    span{
+                        font-size: 16px;
+                        font-weight: 400;
+                        vertical-align: super;
+                    }
+                    small{
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    } // Tab Content
+    
+    &.serviceTab_byside{
+        .service_tab_menu{
+            border: none;
+            padding-top: 106px;
+            background: none;
+            .nav{
+                border: none;
+                li{
+                    a{
+                        border: none;
+                        padding: 29px 45px;
+                        margin: 0;
+                        background: #f0f5f6;
+                        &:before{                            
+                            display: none;
+                        }
+                        .icon{
+                        }
+                        &:hover,&:focus{
+							color: @baseColor13;
+                            background: darken(@baseColor,4%);
+                            &:before{
+                            }
+                        }
+                    }
+                    & + li{
+                        a{
+                        }
+                    }
+                    &.active{
+                        a{
+                            color: @baseColor13;
+							background: @baseColor;
+                            &:before{
+                            }
+                        }
+                    }
+                }
+            }
+        } // Tab Menu
+        .serviceTab_contents{
+            .tab-content{
+                .tab-pane{
+                    padding-top: 43px;
+                    .ico_pic{
+                        width: 55%;                        
+                        .service_img{
+                        }
+                        .service_ico{
+                            width: 180px;
+                            height: 180px; 
+                            box-shadow: 3px 0 79px fade(#000,8%);
+                            right: 0;
+                            left: auto;
+                            background: #fff;
+                        }                        
+                    }
+                    .texts{
+                        width: 45%;
+                        .title{
+                        }
+                        p{
+                        }
+                        ul{
+                        }
+                        .btn{
+                            float: left;
+                            & + .pkg_price{
+                                line-height: 40px;
+                                padding: 0 17px;
+                                background: #262626;
+                                float: left;
+                                transform: rotateY(-90deg) perspective(150px);
+                                perspective-origin: left;
+                                transform-origin: left;
+                            }
+                            &:hover{
+                                & + .pkg_price{
+                                    transform: rotateX(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } // Tab Content
+    }
+}
+
+
+.service_tabs_list{
+    .service_tab{
+        padding: 100px 0 95px;
+        .ico_price{
+            .ico{
+                width: 339px;
+                height: 339px;
+                border-radius: 100%;
+                line-height: 339px;
+                text-align: center;
+                float: left;
+                background: #fff;
+            }
+            .rent{
+                position: absolute;
+                top: 19px;
+                left: 282px;
+                border-radius: 100%;
+                background: @baseColor;
+                width: 119px;
+                height: 119px;
+                text-align: center;
+                font-family: @baseFont2;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 1;
+                color: #fff;
+                text-transform: uppercase;
+                padding-top: 33px;
+                span{
+                    font-size: 14px;
+                    font-weight: 500;
+                    vertical-align: super;
+                    margin-right: 1px;
+                }
+                small{
+                    display: block;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .content{
+            padding-top: 25px;
+            h3{
+                font-family: @baseFont2;
+                font-weight: 100;
+                font-size: 48px;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: 18px;
+                font-weight: 300;
+            }
+            ul{
+                li{
+                    margin-top: 30px;
+                    width: 50%;
+                    float: left;
+                    & + li{
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .btn{
+                margin-top: 40px;
+            }
+        }
+        &:nth-child(odd){
+            background: #f0f5f6;
+        }
+        &:nth-child(even){
+            .ico_price{
+                padding-left: 50px;
+                float: right;
+                .ico{
+                    background: #f0f5f6;
+                }
+            }
+        }
+    }
+}

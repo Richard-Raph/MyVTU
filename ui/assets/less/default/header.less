@@ -1,0 +1,427 @@
+.fluid_header{
+    min-height: 76px;
+    margin-bottom: 0;
+    background: #FFF;
+    width:100%;
+    top:0px;
+    box-shadow: none;
+    .navbar-header{
+        z-index: 1000;
+        .navbar-brand{
+            z-index: 2;
+            padding: 21px 15px;
+            height: auto;
+            img{
+                display: inline-block;
+            }
+        }
+        .navbar-toggle{
+            span{
+            }
+        }
+    } // Navbar Heder
+//    .navbar-collapse{
+        .navbar-nav{
+            &.navbar-left{
+                li{
+                    a{
+                        font-family: @baseFont;
+                        line-height: 76px;
+                        padding: 0;
+                        color: @baseColor2;
+                        text-transform: uppercase;
+                        i{
+                            margin-right: 11px;
+                        }
+                    }
+                    &:first-child{
+                        margin-right: 27px;
+                        margin-left: 35px;
+                        a{
+                            font-weight: bold;
+                            font-size: 15px;
+                            i{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.navbar-right{
+                li{
+                    a{
+                        color: @baseColor2;
+                        line-height: 75px;
+                        padding: 0 21px;
+						background-image:none;
+						background-color:@baseColor13;
+                        text-transform: uppercase;
+                        font-family: @baseFont;
+                        &:hover,&:focus{
+                            color: @baseColor3;
+                        }
+                    }
+                    &.dropdown{
+                        a{
+                            &:after{
+                                content: '';
+                                width: 15px;
+                                height: 15px;
+                                
+                                display: block;
+                                position: absolute;
+                                transform: rotate(45deg);
+                                left: ~"calc(50% - 11px)";
+                                bottom: -8px;
+                                display: none;
+                                z-index: 1001;
+                                border-radius: 3px;
+                            }
+                        }
+                        .dropdown-menu{
+                            border: none;                            
+                            border-top:1px solid @baseColor13;
+                            min-width: 200px;
+                            border-radius: 0;
+                            display: block;
+                            transform: scale(1,0);
+							-webkit-transform: scale(1,0);
+                            transform-origin: top;
+                            z-index: 1000;
+                            padding: 9px 0 0;
+                            left: 0;
+                            .transition();
+                            li{
+                                a{
+                                    line-height: 40px;
+                                    color: @baseColor2;
+                                    position: relative;
+                                    &:after{
+                                        display: none;
+                                    }
+                                    &:hover{
+                                        color: @baseColor3;
+                                    }
+                                }
+                            }                         
+                        }
+                        &.mega-drop{
+                            position: static;
+                            .mega-menu{
+                                right: 30px;
+                                padding: 0;
+                                li{
+                                    float: left;
+                                    &.service_list{
+										width: ~"calc( 100% - 274px)";
+                                        padding: 30px 0 30px 34px;
+                                        .service{
+                                            float: left;
+                                            width: 50%;
+                                            border-top: 1px solid @baseColor12;
+                                            padding-top: 25px;
+                                            .media{
+                                                padding: 0 0px 20px 0;
+                                                .media-left{
+                                                    padding-right: 15px;
+                                                    a{
+                                                        padding: 0;
+                                                        padding-top: 5px;
+                                                        display: block;
+                                                        line-height: 1;
+                                                        img{
+                                                        }
+                                                        &:hover{
+                                                            cursor: default;
+                                                            background: none;
+                                                        }
+                                                    }
+                                                }
+                                                .media-body{
+                                                    a{
+                                                        padding: 0;
+                                                        line-height: 1;
+                                                        color: @baseColor5;
+                                                        margin-bottom: 7px;
+                                                        font-family: @baseFont;
+                                                        font-weight: bold;
+                                                        display: inline-block;
+                                                        &:hover{
+                                                            background: none;
+                                                            color: @baseColor3;
+                                                        }
+                                                    }
+                                                    p{
+                                                        max-width: 135px;
+                                                        font-size: 12px;
+                                                        line-height: 16px;
+                                                        color: #9c959c;
+                                                    }
+                                                }
+                                            }
+                                            &:nth-child(even){
+                                                padding-left: 20px;
+                                                border-left: 1px solid @baseColor12;
+                                            }
+                                            &:nth-child(1){
+                                                border-top:none;
+                                                padding-top: 0;
+                                            }
+                                            &:nth-child(2){
+                                                border-top: none;
+                                                padding-top: 0;
+                                            }
+                                        }
+                                    }
+                                    &.start_offer{
+                                        padding: 27px 21px 37px 23px;
+                                        width: 274px;
+                                        .inner{
+                                            background: @baseColor3;
+                                            padding: 23px 32px 23px 29px;
+                                            text-align: center;
+                                            .title{
+                                                margin: 0;
+                                                color: #4dbdfe;
+                                                font-family: @baseFont;
+                                                font-weight: bold;
+                                                font-size: 24px;
+                                                line-height: 1;
+                                            }
+                                            .offered_price{
+                                                margin-top: 30px;
+                                                color: #fff;
+                                                line-height: 1;
+                                                margin-bottom: 0;
+                                                font-family: @baseFont;
+                                                font-weight: bold;
+                                                small{
+                                                    color: #fff;
+                                                }
+                                            }
+                                            .regular_price{
+                                                color: #4dbdfe;
+                                                margin-top: 0;
+                                                margin-bottom: 18px;
+                                                font-family: @baseFont;
+                                                font-weight: bold;
+                                                small{
+                                                    color: #4dbdfe;
+                                                }
+                                            }
+                                            .btn{
+                                                font-family: @baseFont;
+                                                font-weight: bold;
+                                                text-shadow: none;
+                                                border-radius: 0;
+                                                display: block;
+                                                background: #fff;
+                                                color: @baseColor5;
+                                                text-transform: uppercase;
+                                                padding: 0;
+                                                line-height: 37px;
+                                                box-shadow: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.open{
+                            a{
+                                &:after{
+                                    display: block;
+									                                
+                                }                            
+                            }
+                        }
+                        
+                        &:hover{
+                            a{
+                                &:after{
+                                    display: block;
+                                }
+                            }
+                            .dropdown-menu{
+                                transform: scale(1,1);
+								-webkit-transform: scale(1,1);
+                            }
+                        }
+                    }
+                    &.active,&.open{
+                        a{
+                            color: @baseColor2;
+							font-weight:600;
+                            background: none;
+                            box-shadow: none;
+                        }
+                        &.dropdown{
+                            a{
+                                
+                            }
+                        }
+                    }
+                    &.login-link{
+                        margin: 20px 15px 0 0;
+                        a{
+                            background: @baseColor11;
+                            color: #fff;
+                            line-height: 35px;
+                        }
+                    }                    
+                }
+            }
+        }
+//    }
+    &.centered{
+        .navbar-collapse{
+            .navbar-nav{
+                &.navbar-right{
+                    li{
+                        a{
+                            &:hover,&:focus{
+                            }
+                        }
+                        &.dropdown{
+                            a{
+                                &:after{
+                                }
+                            }
+                            .dropdown-menu{
+                                li{
+                                    a{
+                                        &:after{
+                                        }
+                                        &:hover{
+                                        }
+                                    }
+                                }                         
+                            }
+                            &.mega-drop{
+                                .mega-menu{
+                                    li{
+                                        &.service_list{
+                                            .service{
+                                                .media{
+                                                    .media-left{
+                                                        a{
+                                                            img{
+                                                            }
+                                                            &:hover{
+                                                            }
+                                                        }
+                                                    }
+                                                    .media-body{
+                                                        a{
+                                                            &:hover{
+                                                            }
+                                                        }
+                                                        p{
+                                                        }
+                                                    }
+                                                }
+                                                &:nth-child(even){
+                                                }
+                                                &:nth-child(1){
+                                                }
+                                                &:nth-child(2){
+                                                }
+                                            }
+                                        }
+                                        &.start_offer{
+                                            .inner{
+                                                .title{
+                                                }
+                                                .offered_price{
+                                                    small{
+                                                    }
+                                                }
+                                                .regular_price{
+                                                    small{
+                                                    }
+                                                }
+                                                .btn{
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &.open{
+                                a{
+                                    &:after{
+                                    }                            
+                                }
+                            }
+
+                            &:hover{
+                                a{
+                                    &:after{
+                                    }
+                                }
+                                .dropdown-menu{
+                                }
+                            }
+                        }
+                        &.active,&.open{
+                            a{
+                            }
+                            &.dropdown{
+                                a{
+								
+                                }
+                            }
+                        }
+                        &.login-link{
+                            a{
+                                background: #f95732;
+                            }
+                        }                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+.top_header{
+    line-height: 50px;
+    border-bottom: 1px solid  #f1f1f1;
+    .wc_msg{
+        color: #4a4a4a;
+        font-family: @baseFont;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .nav{
+        float: right;
+        li{
+            a{
+                padding: 0;
+                font-family: @baseFont;
+                font-size: 14px;
+                color: #4a4a4a;
+				text-transform: uppercase;
+                i{
+                    margin-right: 12px;
+                }
+                &:hover{
+                    color: @baseColor2;
+                    background: none;
+                }
+            }
+            margin-left: 0;
+            margin-right: 0;
+            &:first-child{
+                margin-right: 40px;
+            }
+            &:nth-child(2){
+                margin-right: 29px;
+            }
+        }
+    }
+}
+.fluid_header .navbar-nav.navbar-right li.dropdown.mega-drop:hover .dropdown-menu,.fluid_header .navbar-nav.navbar-right li.open .dropdown-menu{
+transform: scale(1, 1);
+-webkit-transform: scale(1, 1); display:inline-block;
+}

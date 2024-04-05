@@ -1,0 +1,565 @@
+.pricing.row{
+    background: @baseColor3;
+    padding-top: 85px;
+    margin-bottom: -208px;
+    .sectionTitle{
+        h5,h2{
+            color: #fff;
+        }
+    }
+    &.pricing2{
+        margin-bottom: 0;
+    }
+}
+
+.pricing_bottom.row{
+    background: #f1f6f8;
+    height: 260px;
+}
+
+.pricing_plan{
+    max-width: 975px;
+    height: 416px;
+    margin: 0 auto;
+    padding-left: 40px;
+    .owl-item{
+        *{
+            .transition();
+        }
+        .item{
+            padding: 108px 30px;
+            text-align: center;
+            .plan{
+                width: 194px;
+                height: 194px;
+                background: #fff;
+                border-radius: 100%;
+                box-shadow: 4px 0 39px fade(#2e2e2e,9%);
+                padding-top: 50px;
+                .price{
+                    font-family: @baseFont2;
+                    font-weight: 300;
+                    line-height: 1;
+                    color: @baseColor3;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    .currencyType{
+                        font-size: 18px;
+                        vertical-align: super;
+                    }
+                    .amount{
+                        font-size: 36px;
+                        vertical-align: middle;
+                    }
+                    small{
+                        vertical-align: sub;
+                        font-size: 12px;
+                        bottom: -5px;
+                    }
+                }
+                .serviceType{
+                    h4{
+                        line-height: 42px;
+                        margin: 0;
+                        font-family: @baseFont2;
+                        font-weight: 300;
+                        font-size: 12px;
+                        color: #080808;
+                        display: inline-block;
+                        border-top: 1px solid  #e2e2e2;
+                        border-bottom: 1px solid  #e2e2e2;
+                        letter-spacing: 1px;
+                    }
+                }
+                p{
+                    display: none;
+                }
+                .btn{
+                    display: none;
+                }
+            }
+        }
+        &.center{
+            .item{
+                padding: 0 30px 30px;
+                .plan{
+                    width: 416px;
+                    height: 416px;
+                    margin-left: -110px;
+                    .price{
+                        .currencyType{
+                            font-size: 24px;
+                            vertical-align: super;
+                            top: -5px;
+                        }
+                        .amount{
+                            font-size: 72px;
+                        }
+                        small{
+                            bottom: -15px;
+                        }                    
+                    }
+                    .serviceType{
+                        h4{
+                            font-size: 16px;
+                            padding: 0 10px;
+                            margin-top: 5px;
+                        }
+                    }
+                    p{
+                        display: block;
+                        max-width: 220px;
+                        margin: 30px auto;
+                    }
+                    .btn{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pricing_nav{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    top: 59%;
+    .col-sm-4{
+        
+    }
+    #pricing_nav{
+        div{
+            font-size: 18px;
+            cursor: pointer;
+            &.owl-prev{
+                float: left;
+            }
+            &.owl-next{
+                float: right;
+            }
+        }
+    }
+}
+
+.price_plan{
+    padding-top: 50px;
+    .inner{
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        .plan_intro{
+            height: 260px;
+            background: #f0f5f6;
+            margin-bottom: -100px;
+            padding-top: 40px;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 130px;
+                top: 130px;
+                left: 0;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f5f5+0,ffffff+100 */
+                background: #f5f5f5;
+                background: -moz-linear-gradient(top,  #f5f5f5 0%, #ffffff 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#ffffff));
+                background: -webkit-linear-gradient(top,  #f5f5f5 0%,#ffffff 100%);
+                background: -o-linear-gradient(top,  #f5f5f5 0%,#ffffff 100%);
+                background: -ms-linear-gradient(top,  #f5f5f5 0%,#ffffff 100%);
+                background: linear-gradient(to bottom,  #f5f5f5 0%,#ffffff 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#ffffff',GradientType=0 );
+
+            }            
+            .price{
+                font-family: @baseFont2;
+                font-weight: 300;
+                line-height: 1;
+                color: @baseColor3;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+                .currencyType{
+                    font-size: 18px;
+                    vertical-align: super;
+                }
+                .amount{
+                    font-size: 36px;
+                    vertical-align: middle;
+                }
+                small{
+                    vertical-align: sub;
+                    font-size: 12px;
+                    bottom: -5px;
+                }
+            }
+            .planType{
+                h4{
+                    line-height: 42px;
+                    margin: 0;
+                    font-family: @baseFont2;
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: #080808;
+                    display: inline-block;
+                    border-top: 1px solid  #e2e2e2;
+                    border-bottom: 1px solid  #e2e2e2;
+                    letter-spacing: 1px;
+                }
+            }
+            
+        }
+        .service_provide_row{
+            background: #fff;
+            padding-bottom: 46px;
+            .service_provide{
+                margin: 25px 0;
+                li{
+                    line-height: 49px;
+                    text-align: center;
+                    font-family: @baseFont2;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: #6e6a6a;
+                    padding: 0 40px;
+                }
+            }
+        }
+    }
+    &.best_plan{
+        padding-top: 0;
+        .inner{
+            max-width: 100%;
+            .plan_intro{
+                height: 360px;
+                margin-bottom: -150px;
+                background: @baseColor;
+                &:after{
+				background: @baseColor;
+                    height: 180px;
+                    top: 180px;
+                }
+                .price{
+                    color: #fff;
+                    .currencyType{
+                        font-size: 24px;
+                        vertical-align: super;
+                        top: -5px;
+                    }
+                    .amount{
+                        font-size: 72px;
+                    }
+                    small{
+                        bottom: -15px;
+                    }                    
+                }
+                .planType{
+                    h4{
+                        font-size: 16px;
+                        padding: 0 10px;
+						margin-top: 5px;
+						color: @baseColor13;
+                        border-top-color: rgba(255, 255, 255, 0.3);
+                        border-bottom-color: rgba(255, 255, 255, 0.3);
+                    }
+                }
+            }            
+            .service_provide_row{
+                .service_provide{
+                    li{
+                        padding: 0 80px;
+                    }
+                }
+                .btn{
+                    background: @baseColor;
+                    &:hover{
+                        background: darken(@baseColor,5%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pricing_slider_row{
+    padding: 95px 0 30px;
+    .pricing_slider{
+        .owl-item{
+            .item{
+                text-align: center;
+                background: #f1f6f8;        
+                .domain_ext{
+                    line-height: 83px;
+                    background: #589ffc;
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-family: @baseFont2;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    border-bottom: 42px solid @baseColor3;
+                    &.com{}
+                    &.net{background: #4594fe;}
+                    &.in{background: #348afd;}
+                    &.org{background: #2982f8;}
+                    &.biz{background: #2985f8;}
+                }
+                .price{
+                    font-family: @baseFont2;
+                    font-weight: 300;
+                    line-height: 1;
+                    color: @baseColor3;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    background: #FFF;
+                    width: 120px;
+                    height: 120px;
+                    line-height: 110px;
+                    border-radius: 100%;
+                    margin: -55px auto 0;
+                    box-shadow: 4px 0 79px fade(#2e2e2e,9%);
+                    .currencyType{
+                        font-size: 18px;
+                        vertical-align: super;
+                        top: -10px;
+                        font-weight: bold;
+                    }
+                    .amount{
+                        font-size: 48px;
+                        font-weight: bold;
+                        vertical-align: middle;
+                    }
+                    small{
+                        vertical-align: sub;
+                        font-size: 12px;
+                        bottom: -5px;
+                    }
+                }
+                .short_note{
+                    color: @baseColor5;
+                    font-family: @baseFont2;
+                    font-weight: 300;
+                    line-height: 24px;
+                    padding: 20px 43px 30px;
+                }
+                .btn{
+                    margin-bottom: 30px;
+                    &:hover,&:focus{
+                        background: @baseColor;
+                    }
+                }
+            }
+        }
+        .owl-controls{
+            text-align: center;
+            margin-top: 20px;
+            .owl-dots{
+                display: inline-block;
+                .owl-dot{
+                    float: left;
+                    background: #e5e9eb;
+                    width: 12px;
+                    height: 12px;
+                    margin: 0 2px;
+                    border-radius: 100%;
+                    &.active{
+                        background: @baseColor3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.domain_price_list{
+    ul.nav-tabs{
+        border: none;
+        &>li{
+            &>a{
+                border: 0;
+                border-radius: 0;
+                text-transform: uppercase;
+                color: @baseColor5;
+                font-family: @baseFont2;
+                font-weight: bold;
+                line-height: 60px;
+                padding: 0 15px;
+                &:hover,&:focus{
+                    background: @baseColor;
+					color: @baseColor13;
+                    border: 0px;
+                }
+            }
+            &.active{
+                a{
+                    border: 0px;
+					color: @baseColor13;
+                    background: @baseColor;
+                }
+            }
+        }
+    }
+    .p_list_content{
+        padding: 59px 0;
+        background: #f1f6f8;
+    }
+}
+
+.pricing_list_table{
+    background: #fff;
+    text-transform: uppercase;
+    thead{
+        tr{
+            th{
+                width: 1%;
+                border: none;
+                padding: 0 42px;
+                line-height: 60px;
+                font-family: @baseFont2;
+                color: #7b9196;
+            }
+        }
+    }
+    tbody{
+        padding-bottom: 10px;
+        tr{
+            th{
+                border: none;
+                padding: 0 42px;           
+                line-height: 60px;
+                font-family: @baseFont2;
+                color: @baseColor5;
+            }
+            td{
+                border: none;
+                padding: 0;                
+                line-height: 60px;
+                padding: 0 42px;
+                font-family: @baseFont2;
+                color: @baseColor5;
+            }
+        }
+    }
+}
+
+.pricing_plan_table{
+    background: #f1f6f8;
+    padding: 100px 0;
+    .sectionTitle{
+        margin-bottom: 70px;
+    }
+}
+
+.pricing_plan_cell{
+    background: #fff;
+    margin-top: 13px;
+    text-align: center;    
+    .plan_type{
+        height: 118px;
+        padding: 30px 0;
+        background: #589ffd;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: @baseFont2;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        span{
+            position: absolute;
+            display: inline-block;
+            line-height: 26px;
+            font-size: 14px;
+            color: @baseColor13;
+            background: @baseColor;
+            padding: 0 20px;
+            top: -13px;
+            left: ~"calc(50% - 56px)";
+        }
+		&.basic,
+        &.silver,
+        &.gold,
+        &.diamond{
+            padding: 44px 0;
+        }
+        &.silver{
+            background: #4594fe;
+        }
+        &.gold{
+            background: #348afe;
+        }
+        &.diamond{
+            background: #2982f8;
+        }
+    }
+    .pricing_row{
+        color: #FFF;
+        background: @baseColor3;
+        line-height: 60px;
+        height: 60px;
+        margin-bottom: 90px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: @baseFont2;
+        letter-spacing: 1px;
+        .price{
+            font-family: @baseFont2;
+            font-weight: 300;
+            line-height: 1;
+            color: @baseColor3;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            background: #FFF;
+            width: 120px;
+            height: 120px;
+            line-height: 110px;
+            border-radius: 100%;
+            margin: 0 auto;
+            box-shadow: 4px 0 79px fade(#2e2e2e,9%);
+            letter-spacing: 0;
+            .currencyType{
+                font-size: 18px;
+                vertical-align: super;
+                top: -10px;
+                font-weight: bold;
+            }
+            .amount{
+                font-size: 48px;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            small{
+                vertical-align: sub;
+                font-size: 12px;
+                bottom: -5px;
+            }
+        }
+    }
+    .nav_a{
+        border-right: 1px solid #ecf3f6;
+    }
+    .nav{
+        line-height: 50px;
+        li{
+            border-bottom: 1px solid #ecf3f6;
+            font-family: @baseFont2;
+            font-weight: 300;
+            color: @baseColor5;
+            .fa-check{
+                color: #52a51b;
+            }
+            .fa-times{
+                color: #cf1b41;
+            }
+        }
+    }
+    .btn{
+        margin: 30px 0 45px;
+        &.visible-none{
+            visibility: hidden;
+        }
+        &:hover,&:focus{
+            background: @baseColor;
+        }
+    }
+}

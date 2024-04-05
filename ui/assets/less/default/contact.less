@@ -1,0 +1,230 @@
+.contact_banner{
+    background: url(../../images/contact/1.jpg) no-repeat scroll center top;
+    background-size: cover;
+    padding: 100px 0 120px;        
+    h4{
+        color: #fff;
+        span{
+            color: @baseColor;
+        }
+    }
+    h2{
+        color: #fff;
+        font-family: @baseFont2;
+        font-size: 36px;
+        line-height: 40px;
+        margin: 15px 0;
+        i{
+            font-size: 24px;
+            margin-right: 15px;
+        }
+    }
+    p{
+        font-family: @baseFont2;
+        font-weight: 300;
+        color: fade(#fff,70%);        
+        line-height: 1.857;
+        letter-spacing: 1px;
+        max-width: 427px;
+    }
+    &.hosting_banner{
+        background-image: url(../../images/hosting/dedicated.jpg);
+        padding: 150px 0;
+    }
+	&.hosting_reseller{
+        background-image:  url(../../images/hosting/resellal.jpg);
+        padding: 150px 0;
+    }
+	&.hosting_shared{
+        background-image:  url(../../images/hosting/wordpress.jpg);
+        padding: 150px 0;
+    }
+	&.domain_transfer{
+        background-image:  url(../../images/hosting/domain.jpg);
+        padding: 150px 0;
+    }
+}
+
+.contact_content{
+    padding: 0px 0 120px;
+    .part_number{
+        margin-bottom: 18px;
+        font-size: 48px;
+        color: @baseColor3;
+        font-family: @baseFont2;
+        font-weight: bold;
+        line-height: 1;
+    }
+    .part_title{
+        margin-bottom: 25px;
+    }
+    .form_row{
+       
+        border-bottom: 1px solid #eaeaea;
+        h4{
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 30px;
+        }
+        .form_side{
+            width: 633px;
+            padding: 60px 63px 80px 0;
+            border-right: 1px solid #eaeaea;
+        }
+        .detail_address{
+            width: ~"calc(100% - 633px)";
+            padding: 60px 75px 80px;
+            .media{
+                & + .media{
+                    margin-top: 30px;
+                    .media-left{
+                        i{
+                            background: @baseColor;
+                        }
+                    }
+                    & + .media{
+                        margin-top: 30px;
+                        .media-left{
+                            i{
+                                background: #f95732;
+                            }
+                        }
+                    }
+                }
+                .media-left{
+                    padding-right: 35px;
+                    i{
+                        width: 80px;
+                        height: 80px;
+                        line-height: 75px;
+                        background: @baseColor3;
+                        text-align: center;
+                        font-size: 24px;
+                        color: #fff;
+                        border-radius: 100%;
+                    }
+                }
+                .media-body{
+                    padding-top: 5px;
+                    font-family: @baseFont2;
+                    font-weight: 300;
+                    font-size: 18px;
+                    color: @baseColor5;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                    a{
+                        color: @baseColor3;
+                    }
+                    .nav{
+                        li{
+                            a{
+                                padding: 0;
+                                font-family: @baseFont;
+                                font-size: 16px;
+                                color: #4a4a4a;
+                                text-transform: uppercase;
+                                i{
+                                    margin-right: 12px;
+                                }
+                                &:hover{
+                                    color: @baseColor3;
+                                    background: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .we_support{
+        padding-top: 80px;
+        .part_title{
+            margin-bottom: 60px;
+        }
+        .col-sm-4{
+            .media{
+                padding-right: 60px;
+                .media-left{
+                    padding-right: 18px;
+                    i{
+                        width: 80px;
+                        height: 80px;
+                        line-height: 75px;
+                        background: @baseColor3;
+                        text-align: center;
+                        font-size: 24px;
+                        color: #fff;
+                        border-radius: 100%;
+                    }
+                }
+                .media-body{
+                    padding-top: 5px;
+                    h4{
+                        text-transform: capitalize;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            &:nth-child(2){
+                .media{
+                    .media-left{
+                        i{
+                            background: @baseColor;
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                .media{
+                    .media-left{
+                        i{
+                            background: #f95732;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
+
+#mapBox{
+    height: 426px;
+    margin: 20px 0 90px;
+    & + .mapbox_hr{
+        background: #eaeaea;
+        margin: 0;
+    }
+}
+
+#contactForm{
+    .form-control{
+        margin-bottom: 15px;
+    }
+    textarea.form-control{
+        margin-bottom: 30px;
+    }
+}
+
+.contactForm{
+    position: relative;
+    #success,#error{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: @baseFont2;
+        font-size: 18px;
+        font-weight: 300;
+        width: 100%;        
+        text-align: center;
+        line-height: 342px;
+        background: fade( darken(@baseColor2,5%),90% );
+        display: none;
+    }
+    #success{
+        color: lightgreen;
+    }
+    #error{
+        color: #f95732;
+    }
+}

@@ -1,0 +1,97 @@
+.team_section{
+    padding: 65px 0 85px;
+}
+
+.team_member{
+    padding: 15px;
+    .inner{
+        background: #f1f6f8;
+        border-bottom: 2px solid @baseColor3;
+        text-align: center;
+        padding: 30px 45px 30px 30px;
+        height: 321px;
+        overflow: hidden;
+        .transition();        
+        .image{
+            width: 118px;
+            height: 118px;
+            border-radius: 100%;
+            border: 1px solid #dae0e2;
+            margin: 0 auto;
+            overflow: hidden;
+            .transition();
+            img{
+                width: 100%;
+                border-radius: 100%;
+            }
+        }
+        h4{
+            margin-top: 28px;
+            margin-bottom: 10px;
+            .transition();
+        }
+        h6{
+            margin-bottom: 25px;
+            font-weight: 300;
+            color: @baseColor3;
+            .transition();
+        }
+        p{
+            overflow: hidden;
+            line-height: 24px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            .transition();
+            &.nState{
+            }
+            &.hState{
+                height: 0;
+                margin-bottom: 0;
+            }
+        }
+        ul{
+            height: 0;
+            overflow: hidden;
+            margin: 0;
+            .transition();
+            li{
+                float: left;
+                & + li{
+                    margin-left: 15px;                    
+                }
+                a{
+                    color: #d8e8fc;
+                }
+            }
+        }
+        &:hover{
+            padding-right: 45px;
+            text-align: left;
+            background: @baseColor3;
+            .image{
+                height: 0;
+                border: 0;
+            }
+            h4{
+                color: #d8e8fc;
+                margin-top: 0;
+            }
+            h6{
+                color: #d8e8fc;
+            }
+            p{
+                &.nState{
+                    height: 0;
+                }
+                &.hState{
+                    height: auto;
+                    margin-bottom: 30px;
+                    color: #d8e8fc;
+                }
+            }
+            ul{
+                height: auto;
+            }
+        }
+    }
+}
