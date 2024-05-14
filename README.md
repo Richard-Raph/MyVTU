@@ -1,35 +1,8 @@
-# VTU Website
+# React + Vite
 
-This is a website that allows users to top up virtual wallets and accounts, pay bills, purchase airtime and data and many more... 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Description
-The website provides an easy way for users to top up various virtual services and accounts like:
+Currently, two official plugins are available:
 
-- Mobile and Data Plans
-- Electricity Bills
-- DSTV, Startimes, GOTV
-- and more...
-
-Key features:
-
-- Browse and select from various top-up options
-- Secure login and payment options
-- View top-up history and manage accounts
-- Get personalized top-up recommendations 
-- Seamless and instant top-ups in real-time
-
-## Technologies
-- Frontend: React 
-- Backend: PHP, Node.js
-- Database: MongoDB
-- Payment Gateway Integration:
-- APIs for top-ups
-
-## Getting Started
-Instructions on how to set up and run the project locally. 
-
-## Contributing
-Contributions are welcome. Please fork, add features, and create pull requests.
-
-## License
-This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
