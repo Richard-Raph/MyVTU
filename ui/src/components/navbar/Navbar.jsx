@@ -1,25 +1,12 @@
 import { Link } from "react-router-dom";
-import Login from "../auth/Login";
-import Register from "../auth/Register";
+import AuthOverlay from "../AuthOverlay";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [isLoginOpen, setLoginOpen] = useState(false);
-  const [isRegisterOpen, setRegisterOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const openLoginModal = () => {
-    setLoginOpen(true);
-    setRegisterOpen(false);
-  };
-
-  const openRegisterModal = () => {
-    setRegisterOpen(true);
-    setLoginOpen(false);
-  };
-
-  const closeModals = () => {
-    setLoginOpen(false);
-    setRegisterOpen(false);
+  const openModal = () => {
+    setShowModal(!showModal);
   };
 
   return (
@@ -62,87 +49,23 @@ const Navbar = () => {
       </section>
 
       <nav className="navbar navbar-default navbar-static-top fluid_header centered affix-top">
-        <div className="container">
+        <div className="container flex items-center justify-between">
           <div className="navbar-header">
-            <Link to="/" className="navbar-brand">
+            <Link to="/" className="navbar-brand z-0">
               <img
                 src="../../../assets/images/myvtu-logo.png"
                 alt="MyVTU Logo"
                 width={80}
               />
             </Link>
-            <button
-              type="button"
-              className="navbar-toggle collapsed"
-              data-toggle="collapse"
-              data-target="#main_navigation"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Toggle navigation</span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-              <span className="icon-bar"></span>
-            </button>
           </div>
 
-          <div className="collapse navbar-collapse" id="main_navigation">
-            <ul className="nav navbar-nav navbar-right">
-              <li className=" hidden dropdown active">
-                <a href="/" className="dropdown-toggle">
-                  home
-                </a>
-              </li>
-              <li className=" hidden dropdown">
-                <a
-                  href="#"
-                  className="data_btn dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="false"
-                  aria-expanded="false"
-                >
-                  VTU
-                </a>
-              </li>
-              <li className=" hidden dropdown">
-                <a
-                  href="#"
-                  className="electricity_btn dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="false"
-                  aria-expanded="false"
-                >
-                  Electricity
-                </a>
-              </li>
-              <li className=" hidden dropdown">
-                <a
-                  href="#"
-                  className="cable_btn dropdown-toggle"
-                  data-toggle="dropdown"
-                  role="button"
-                  aria-haspopup="false"
-                  aria-expanded="false"
-                >
-                  Cable TV
-                </a>
-              </li>
-              <li className="dropdown">
-                <a href="/dashboard/index.html">Dashboard</a>
-              </li>
-
-              <li className=" dropdown">
-                <a href="/Pricing">Pricing</a>
-              </li>
-              
-              <li id="signup" className="login-link" style={{ backgroundColor: "#216ea7", fontWeight: "bolder" }}>
-                <a className="register_popup_btn cursor-pointer" onClick={openLoginModal}>Login</a>
-              </li>
-            </ul>
-          </div>
-          {isLoginOpen && <Login onClose={closeModals} />}
-          {isRegisterOpen && <Register onClose={closeModals} />}
+          <ul className="nav navbar-nav navbar-right">
+            <li id="signup" className="login-link" style={{ backgroundColor: "#216ea7", fontWeight: "bolder" }}>
+              <a className="register_popup_btn cursor-pointer" onClick={openModal}>Login</a>
+            </li>
+          </ul>
+          {showModal && <AuthOverlay onClose={openModal} />}
         </div>
       </nav>
     </div>
