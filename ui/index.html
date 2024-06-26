@@ -71,6 +71,9 @@
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
     <!-- aos css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/aos.css">
 
@@ -85,7 +88,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/regular.min.css" integrity="sha512-sWLOh8QiEOmwfP3jd0n7AneUOa6XKif5g8GU8FqdFMIbr6rYBt1PKWBp/Wv4E6PQ6N9lFtVAndujl9HbniDTog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Theme Styles-->
@@ -424,7 +427,7 @@
             $("form#mail_form input[name=name]").val(`${__subscribersName}`);
             $("form#mail_form input[name=email]").val(`${__subscribersEmail}`);
             // send request to send email in background
-            
+
             $("#email_popup").fadeIn();
             $("#email_popup").css('display', 'flex');
 
@@ -450,7 +453,7 @@
             $("form#mail_form input[name=name]").val(`All Subscribers Name`);
             $("form#mail_form input[name=email]").val(`All Email Address`);
             // send request to send email in background
-            
+
             $("#email_popup").fadeIn();
             $("#email_popup").css('display', 'flex');
 
@@ -504,7 +507,7 @@
                         $("form#mail_form input[name=name]").val(`${__subscribersName}`);
                         $("form#mail_form input[name=email]").val(`${__subscribersEmail}`);
                         // send request to send email in background
-                        
+
                         $("#email_popup").fadeIn();
                         $("#email_popup").css('display', 'flex');
 
@@ -594,11 +597,11 @@
         //   var dataString=new FormData($("#fileInput")[0]);
             var fd = new FormData();
             var files = $('#fileInput')[0].files;
-            
+
             // Check file selected or not
             if(files.length > 0 ){
               fd.append('file',files[0]);
-              
+
                 $.ajax({
                   type: "POST",
                   url: "http://localhost/regno/file_upload.php",
@@ -614,16 +617,16 @@
                       // reset the form or it won't work a 2nd time
 
                       let content =  tinymce.get("editor").getContent({ format: "html" });;
-                      
-                      if( __fileUrl.split('.').pop() === 'jpg' 
-                          || __fileUrl.split('.').pop() === 'png' 
+
+                      if( __fileUrl.split('.').pop() === 'jpg'
+                          || __fileUrl.split('.').pop() === 'png'
                           ||  __fileUrl.split('.').pop() === 'gif'
                           ||  __fileUrl.split('.').pop() === 'svg'
                           ||  __fileUrl.split('.').pop() === 'jpeg' ) {
 
 
                         // show images preview
-                        
+
                         tinymce.get("editor").execCommand('mceInsertContent', false, `<img src="${__fileUrl}">`);
 
                       }
@@ -635,9 +638,9 @@
                   erorr: err => {
                     console.log(err);
                   }
-            });  
-            }               
-      });  
+            });
+            }
+      });
       });
 
       window.localStorage.setItem('dark', true);

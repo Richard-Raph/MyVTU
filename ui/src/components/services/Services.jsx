@@ -33,7 +33,7 @@ const Services = () => {
                   backgroundColor: "#0099db !important",
                 }}
                 href="#"
-                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-600 hover:bg-blue-800 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
+                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-700 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
               >
                 Buy Airtime
               </a>
@@ -64,7 +64,7 @@ const Services = () => {
                   backgroundColor: "#0099db !important",
                 }}
                 href="#"
-                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-600 hover:bg-blue-800 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
+                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-700 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
               >
                 Buy Data
               </a>
@@ -96,7 +96,7 @@ const Services = () => {
                   backgroundColor: "#0099db !important",
                 }}
                 href="#"
-                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-600 hover:bg-blue-800 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
+                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-700 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
               >
                 Pick a plan
               </a>
@@ -128,7 +128,7 @@ const Services = () => {
                   backgroundColor: "#0099db !important",
                 }}
                 href="#"
-                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-600 hover:bg-blue-800 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
+                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-700 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
               >
                 Pay for Electricity
               </a>
@@ -160,7 +160,7 @@ const Services = () => {
                   backgroundColor: "#0099db !important",
                 }}
                 href="#"
-                className="login_popup_btn airtime_to_cash_btn my-10 py-2 px-7 text-white font-normal bg-blue-500 hover:bg-blue-800 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
+                className="login_popup_btn airtime_to_cash_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-700 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
               >
                 Covert Airtime
               </a>
@@ -192,7 +192,7 @@ const Services = () => {
                   backgroundColor: "#0099db !important",
                 }}
                 href=""
-                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-800 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
+                className="login_popup_btn my-10 py-2 px-7 text-white font-normal bg-blue-400 hover:bg-blue-700 hover:text-white border border-blue-400 transition-all rounded relative block w-max m-auto"
               >
                 Withdraw Balance
               </a>

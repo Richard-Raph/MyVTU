@@ -1,7 +1,26 @@
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';
+
 const HomeSlider = () => {
   return (
     <section className="row slider">
-      <div className="owl-carousel home_slider owl-theme owl-loaded">
+      <OwlCarousel
+        className="owl-carousel home_slider owl-theme owl-loaded"
+        loop
+        autoplay
+        autoplayTimeout={3000}
+        responsive = {{
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
+          }}
+      >
         <div className="owl-stage-outer">
           <div
             className="owl-stage"
@@ -23,7 +42,7 @@ const HomeSlider = () => {
                 <div className="slide_caption row m0">
                   <div className="container">
                     <div className="row">
-                      <small>Advertisement</small>
+
                       <h2>Electricity Payments</h2>
                       <p className="pb-0 mb-0">
                         <i className="fa fa-check text-3xl text-blue-500"></i>
@@ -58,7 +77,7 @@ const HomeSlider = () => {
                 <div className="slide_caption row m0">
                   <div className="container">
                     <div className="row">
-                      <small>Advertisement</small>
+
                       <h2>Airtimes Features</h2>
                       <p className="pb-0 mb-0">
                         <i className="fa fa-check text-3xl text-blue-500"></i>
@@ -171,7 +190,7 @@ const HomeSlider = () => {
                 <div className="slide_caption row m0">
                   <div className="container">
                     <div className="row">
-                      <small>Advertisement</small>
+
                       <h2>Electricity Payments</h2>
                       <p className="pb-0 mb-0">
                         <i className="fa fa-check text-3xl text-blue-500"></i>
@@ -206,7 +225,7 @@ const HomeSlider = () => {
                 <div className="slide_caption row m0">
                   <div className="container">
                     <div className="row">
-                      <small>Advertisement</small>
+
                       <h2>Airtimes Features</h2>
                       <p className="pb-0 mb-0">
                         <i className="fa fa-check text-3xl text-blue-500"></i>
@@ -309,18 +328,7 @@ const HomeSlider = () => {
             </div>
           </div>
         </div>
-        <div className="owl-controls">
-          <div className="owl-nav">
-            <div className="owl-prev" style={{}}>
-              <span className="lnr lnr-chevron-left"></span>
-            </div>
-            <div className="owl-next" style={{}}>
-              <span className="lnr lnr-chevron-right"></span>
-            </div>
-          </div>
-          <div className="owl-dots" style={{ display: 'none' }}></div>
-        </div>
-      </div>
+        </OwlCarousel>
     </section>
   );
 };
